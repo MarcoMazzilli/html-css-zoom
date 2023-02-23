@@ -109,29 +109,54 @@ header .icons span i {
 
 footer {
   display: flex;
-  justify-content:center ;
+  justify-content:space-between ;
+  color: white;
+  background-color: black;
 }
 
 .fot {
   height: 80px;
   min-width: 500px;
-  display: inline-block;
-
 }
+
 .fot.left {
-
-  background-color: rgb(36, 36, 31);
+  background-color: rgb(6, 48, 48);
+  display: flex;
+  align-items: center;
 }
-
 .fot.center {
   flex-grow: 2;
   background-color: rgb(43, 10, 10);
 }
 
 .fot.right {
-
   background-color: rgb(88, 88, 82);
 }
 
-
 /* END FOOTER */
+
+/*START BTN STYLE */
+.btn {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon i:first-child {
+  font-size: 2rem;
+}
+
+.icon > span {
+  font-size: .9rem;
+}
+/* END BTN STYLE */
