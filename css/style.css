@@ -120,30 +120,31 @@ footer {
 }
 
 .fot.left {
-  background-color: rgb(6, 48, 48);
   display: flex;
   align-items: center;
+  padding-left: 10px;
 }
+
 .fot.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   flex-grow: 2;
-  background-color: rgb(43, 10, 10);
 }
 
 .fot.right {
   background-color: rgb(88, 88, 82);
 }
 
-/* END FOOTER */
-
 /*START BTN STYLE */
 .btn {
   min-width: 50px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 5px 10px;
-
 }
+
 .icon {
   display: flex;
   flex-direction: column;
@@ -153,10 +154,14 @@ footer {
 }
 
 .icon i:first-child {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .icon > span {
   font-size: .9rem;
 }
 /* END BTN STYLE */
+
+.fa-share-from-square {
+  color:rgb(75, 200, 0);
+}
