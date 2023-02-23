@@ -32,16 +32,45 @@ header {
 
 main {
   height: calc(100vh - (50px + 80px));
-  background-color: royalblue;
+  background-color: black;
   overflow: auto;
   display:flex;
   align-items: center;
 }
 
 footer {
-height: 80px;
-background-color: brown;
+  height: 80px;
+  background-color: brown;
 }
+
+/* START HEADER */
+
+header {
+  background-color: rgb(0, 0, 0) ;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+header .icons span {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(74, 74, 74);
+}
+
+header .icons span i {
+  font-size: 1rem;
+}
+
+.icons span:first-child i:first-child {
+margin-right: 10px;
+}
+
+/* END HEADER */
 
 /* START MAIN */
 
