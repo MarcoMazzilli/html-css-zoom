@@ -118,7 +118,7 @@ header .icons span i {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .layover > span {
@@ -128,6 +128,12 @@ header .icons span i {
   color: white;
   background-color: rgb(255, 70, 70);
   transition-duration: .3s;
+}
+#manager {
+  background-color: rgb(42, 163, 255);
+}
+#manager:active {
+  background-color: rgb(2, 118, 207);
 }
 
 .user-card:hover .layover {
@@ -140,8 +146,9 @@ opacity: 1;
   font-size: 1.3rem;
 }
 .layover > span:active {
-  background-color: rgb(75, 200, 0);
+  background-color: rgb(88, 0, 0);
   cursor: wait;
+  box-shadow: none;
 }
 
 
