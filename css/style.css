@@ -50,6 +50,7 @@ header {
   display: flex;
   justify-content: end;
   align-items: center;
+  position: relative;
 }
 
 header .icons span {
@@ -60,11 +61,14 @@ header .icons span {
   font-weight: 600;
   color: white;
   background-color: rgb(74, 74, 74);
+  cursor: wait ;
+  transition: .5s;
 }
 
 header .icons span i {
   font-size: 1rem;
 }
+
 
 .icons span:first-child i:first-child {
   margin-right: 10px;
@@ -84,6 +88,11 @@ header .icons span i {
   position: relative;
   flex-wrap: wrap;
 }
+
+.user-video.manager {
+  border: 2px solid rgb(75, 200, 0);
+}
+
 .user-video {
   height: 100% ;
   background-color: black;
@@ -104,6 +113,48 @@ header .icons span i {
   font-weight: 600;
   font-size: .8rem;
 }
+
+
+/* START SPEAKER VIEW STYLE */
+
+
+header .icons:last-child img {
+position: absolute;
+width: 0px;
+height: 0px;
+top: 455px;
+right: 955px;
+object-fit: cover;
+border: 5px solid rgb(75, 200, 0);
+opacity: 0;
+transition: .3s;
+}
+
+header span:first-child:hover {
+  background-color: green;
+}
+
+header .icons:hover img {
+  animation-name : lettop ;
+  animation-duration: 30s;
+  transition-timing-function: linear;
+  width: 100vw;
+  height: calc(100vh - (50px + 80px)); 
+  top: 50px;
+  right: 0; 
+  z-index: 1;
+} 
+@keyframes lettop {
+  1% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+/* END SPEAKER VIEW STYLE */
 
 /* --- START LAYOVER STYLE--- */
 
@@ -129,9 +180,11 @@ header .icons span i {
   background-color: rgb(255, 70, 70);
   transition-duration: .3s;
 }
+
 #manager {
   background-color: rgb(42, 163, 255);
 }
+
 #manager:active {
   background-color: rgb(2, 118, 207);
 }
@@ -139,19 +192,19 @@ header .icons span i {
 .user-card:hover .layover {
 opacity: 1;
 }
+
 .layover > span:hover {
   cursor: pointer;
   box-shadow: 5px 5px 5px black;
   padding: 10px 20px;
   font-size: 1.3rem;
 }
+
 .layover > span:active {
   background-color: rgb(88, 0, 0);
   cursor: wait;
   box-shadow: none;
 }
-
-
 
 /* --- END LAYOVER STYLE--- */
 
