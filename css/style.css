@@ -39,8 +39,10 @@ main {
 }
 
 footer {
-  height: 80px;
+  min-height: 80px;
   background-color: brown;
+  min-width: none;
+  flex-wrap: wrap;
 }
 
 /* START HEADER */
@@ -218,7 +220,8 @@ footer {
   display: flex;
   justify-content:space-between ;
   color: white;
-  background-color: rgb(34, 34, 34)
+  background-color: rgb(34, 34, 34);
+  min-width: none;
 }
 
 .fot {
@@ -236,7 +239,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-grow: 2;
+  flex-grow: 5;
 }
 
 .fot.right {
@@ -295,6 +298,7 @@ button:hover {
   font-size: 1.2rem;
   color: red;
   background-color: rgb(74, 74, 74);
+  flex-shrink: 3;
 }
 
 .fot.right > button:hover {
