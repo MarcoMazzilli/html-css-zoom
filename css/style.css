@@ -78,9 +78,11 @@ header .icons span i {
 
 .user-card {
   width: calc(100% / 7);
+  min-width: 230px;
   height: 155px;
   padding: 5px;
   position: relative;
+  flex-wrap: wrap;
 }
 .user-video {
   height: 100% ;
@@ -111,7 +113,7 @@ footer {
   display: flex;
   justify-content:space-between ;
   color: white;
-  background-color: black;
+  background-color: rgb(34, 34, 34)
 }
 
 .fot {
@@ -120,30 +122,45 @@ footer {
 }
 
 .fot.left {
-  background-color: rgb(6, 48, 48);
   display: flex;
   align-items: center;
+  padding-left: 10px;
 }
+
 .fot.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   flex-grow: 2;
-  background-color: rgb(43, 10, 10);
 }
 
 .fot.right {
-  background-color: rgb(88, 88, 82);
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
-/* END FOOTER */
-
 /*START BTN STYLE */
+button {
+border: 1px solid rgba(0, 0, 0, 0);
+background-color: rgba(0, 0, 0, 0);
+color: white;
+cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
 .btn {
   min-width: 50px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 5px 10px;
-
 }
+
 .icon {
   display: flex;
   flex-direction: column;
@@ -153,10 +170,29 @@ footer {
 }
 
 .icon i:first-child {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .icon > span {
   font-size: .9rem;
 }
+
+.fa-share-from-square {
+  color:rgb(75, 200, 0);
+}
 /* END BTN STYLE */
+
+/* END MEETING STYLE */
+
+.fot.right > button {
+  height: 100%;
+  padding: 0 30px;
+  font-size: 1.2rem;
+  color: red;
+  background-color: rgb(74, 74, 74);
+}
+
+.fot.right > button:hover {
+  border: 1px solid rgba(255, 0, 0, 0.644);
+  border-radius: 0;
+}
