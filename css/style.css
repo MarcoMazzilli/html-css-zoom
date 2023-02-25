@@ -87,6 +87,7 @@ header .icons span i {
 .user-video {
   height: 100% ;
   background-color: black;
+  position: relative;
 }
 
 .user-card .user-info {
@@ -103,6 +104,50 @@ header .icons span i {
   font-weight: 600;
   font-size: .8rem;
 }
+
+/* --- START LAYOVER STYLE--- */
+
+.layover {
+  min-width: 100% ;
+  min-height: 100%;
+  background-color: rgba(45, 45, 45, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.layover > span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(255, 70, 70);
+  transition-duration: .3s;
+}
+
+.user-card:hover .layover {
+opacity: 1;
+}
+.layover > span:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px black;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+}
+.layover > span:active {
+  background-color: rgb(75, 200, 0);
+  cursor: wait;
+}
+
+
+
+/* --- END LAYOVER STYLE--- */
+
 
 /* ----END CARD STYLE---- */
 /* END MAIN */
